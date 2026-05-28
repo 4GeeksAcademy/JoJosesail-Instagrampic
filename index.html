@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Instagram Post Mockup</title>
+  <style>
+    body {
+      background: #fafafa;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 30px;
+    }
+    .insta-post {
+      width: 370px;
+      border: 2px solid #222;
+      border-radius: 8px;
+      background: #fff;
+      margin: auto;
+      box-shadow: 0 2px 8px #0001;
+    }
+    .insta-header {
+      display: flex;
+      align-items: center;
+      padding: 14px 14px 10px 14px;
+      border-bottom: 1px solid #eee;
+    }
+    .insta-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 2px solid #e1306c;
+      margin-right: 10px;
+      background: #222;
+      box-sizing: border-box;
+    }
+    .insta-user {
+      flex: 1;
+    }
+    .insta-user span {
+      display: block;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    .insta-user small {
+      color: #888;
+      font-size: 13px;
+    }
+    .insta-menu {
+      font-size: 22px;
+      color: #888;
+      cursor: pointer;
+    }
+    .insta-img {
+      width: 100%;
+      height: 320px;
+      background: linear-gradient(120deg, #f9d6e5 0%, #f9f6a6 60%, #b6e0f9 100%);
+      background-size: cover;
+      background-position: center;
+      display: block;
+      border-bottom: 1px solid #eee;
+    }
+    .insta-actions {
+      display: flex;
+      align-items: center;
+      padding: 10px 14px 0 14px;
+    }
+    .insta-actions svg {
+      width: 24px;
+      height: 24px;
+      margin-right: 12px;
+      fill: #222;
+      cursor: pointer;
+    }
+    .insta-likes {
+      font-weight: bold;
+      padding: 4px 14px 0 14px;
+      font-size: 15px;
+    }
+    .insta-caption {
+      padding: 6px 14px 14px 14px;
+      font-size: 15px;
+      color: #222;
+    }
+    .insta-caption b {
+      font-weight: bold;
+      margin-right: 4px;
+    }
+    .insta-caption .hashtag {
+      color: #3897f0;
+      text-decoration: none;
+      margin-right: 2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="insta-post">
+    <div class="insta-header">
+      <div class="insta-avatar"></div>
+      <div class="insta-user">
+        <span>robert_hare</span>
+        <small>Altadena, California</small>
+      </div>
+      <div class="insta-menu">&#8942;</div>
+    </div>
+    <div class="insta-img"></div>
+    <div class="insta-actions">
+      <!-- Heart icon -->
+      <svg viewBox="0 0 24 24"><path d="M16.5 3c-1.74 0-3.41 1.01-4.5 2.09C10.91 4.01 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54a1.5 1.5 0 0 0 2.1 0C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3z"></path></svg>
+      <!-- Comment icon -->
+      <svg viewBox="0 0 24 24"><path d="M21 6.5a2.5 2.5 0 0 0-2.5-2.5h-13A2.5 2.5 0 0 0 3 6.5v7A2.5 2.5 0 0 0 5.5 16H7v3l3.29-3H18.5A2.5 2.5 0 0 0 21 13.5v-7z"></path></svg>
+      <!-- Share icon -->
+      <svg viewBox="0 0 24 24"><path d="M18 8.59V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2v-3.59l3.29 3.3a1 1 0 0 0 1.42-1.42l-5-5a1 1 0 0 0-1.42 0l-5 5a1 1 0 0 0 1.42 1.42L18 15.41z"></path></svg>
+    </div>
+    <div class="insta-likes">212 Likes</div>
+    <div class="insta-caption">
+      <b>robert_hare</b>
+      lorem ipsum dolor sit amet
+      <a class="hashtag" href="#">#augue</a>
+      <a class="hashtag" href="#">#adipiscing</a>
+      <a class="hashtag" href="#">#elit</a>
+      <a class="hashtag" href="#">#do</a>
+      <a class="hashtag" href="#">#eiusmod</a>
+      <a class="hashtag" href="#">#tempor</a>
+    </div>
+  </div>
+</body>
+</html>
