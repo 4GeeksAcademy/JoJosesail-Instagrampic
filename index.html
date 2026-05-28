@@ -48,9 +48,50 @@
       font-size: 13px;
     }
     .insta-menu {
+      position: relative;
+    }
+    .insta-menu summary {
+      list-style: none;
       font-size: 22px;
       color: #888;
       cursor: pointer;
+      line-height: 1;
+      padding: 2px 4px;
+      border-radius: 6px;
+    }
+    .insta-menu summary::-webkit-details-marker {
+      display: none;
+    }
+    .insta-menu summary:hover {
+      background: #f3f4f6;
+    }
+    .menu-options {
+      display: none;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      min-width: 140px;
+      margin: 0;
+      padding: 6px 0;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+      list-style: none;
+      z-index: 20;
+    }
+    .insta-menu[open] .menu-options {
+      display: block;
+    }
+    .menu-options li a {
+      display: block;
+      padding: 8px 12px;
+      font-size: 14px;
+      color: #111;
+      text-decoration: none;
+    }
+    .menu-options li a:hover {
+      background: #f3f4f6;
     }
     .insta-img {
       width: 100%;
@@ -109,7 +150,13 @@
         <span>Josesail</span>
         <small>Caracas, Vzla</small>
       </div>
-      <div class="insta-menu">&#8942;</div>
+      <details class="insta-menu">
+        <summary aria-label="Abrir menú">&#8942;</summary>
+        <ul class="menu-options">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Cerrar sesión</a></li>
+        </ul>
+      </details>
     </div>
     <img class="insta-img" src="https://picsum.photos/id/1005/1200/900" alt="Imagen del post" loading="eager" decoding="async">
     <div class="insta-actions">
