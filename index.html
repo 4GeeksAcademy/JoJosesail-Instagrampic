@@ -28,10 +28,11 @@
     .insta-avatar {
       width: 38px;
       height: 38px;
+      display: block;
       border-radius: 50%;
       border: 2px solid #e1306c;
       margin-right: 10px;
-      background: #222;
+      object-fit: cover;
       box-sizing: border-box;
     }
     .insta-user {
@@ -103,7 +104,7 @@
 <body>
   <div class="insta-post">
     <div class="insta-header">
-      <div class="insta-avatar"></div>
+      <img class="insta-avatar" src="https://picsum.photos/id/237/200/300" alt="Foto de perfil" loading="lazy" decoding="async">
       <div class="insta-user">
         <span>Josesail</span>
         <small>Caracas, Vzla</small>
